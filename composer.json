@@ -1,22 +1,25 @@
 {
     "require": {
         "php": ">=8.2",
-        "slim/slim": "3.*",
-        "twig/twig": "3.*",
-        "illuminate/database": "11.*",
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.4",
+        "twig/twig": "^3.0",
+        "illuminate/database": "^11.0",
         "ext-mysqli": "*",
         "ext-pdo": "*"
     },
     "autoload":{
-        "psr-0":{
-            "controller":"",
-            "model":"",
-            "db":""
+        "psr-4": {
+            "App\\Controllers\\": "src/Controllers/",
+            "App\\Models\\": "src/Models/",
+            "App\\Database\\": "src/Database/"
         }
     },
     "config": {
         "allow-plugins": {
             "kylekatarnls/update-helper": true
-        }
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }
