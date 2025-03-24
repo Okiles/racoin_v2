@@ -4,7 +4,7 @@ namespace controller;
 
 use model\Departement;
 
-class getDepartment {
+class GetDepartementController {
 
     protected $departments = array();
 

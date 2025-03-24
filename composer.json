@@ -1,12 +1,13 @@
 {
     "require": {
         "php": ">=8.2",
-        "slim/slim": "^4.10",
-        "slim/psr7": "^1.4",
-        "twig/twig": "^3.0",
-        "illuminate/database": "^11.0",
         "ext-mysqli": "*",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "illuminate/database": "^11.0",
+        "monolog/monolog": "^3.8",
+        "slim/psr7": "^1.4",
+        "slim/slim": "^4.10",
+        "twig/twig": "^3.0"
     },
     "autoload":{
         "psr-4": {
